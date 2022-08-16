@@ -36,7 +36,8 @@ new Vue({
         },
         healAndHurt() {
             const curou = this.heal(10, 15);
-            this.rigisterLog(`${source} você se curou ${curou}.`, cls);
+            console.log(curou)
+            this.rigisterLog(`Jogador se curou ${curou}.`, 'curar');
             this.hurt('playerLife', 7, 12, false,'Monstro', 'Jogador', 'monster');
         },
         heal(min, max) {
